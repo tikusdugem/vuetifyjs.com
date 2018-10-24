@@ -27,6 +27,7 @@
     Colors: 'helpers/Colors',
     Example: 'helpers/Example',
     Examples: 'helpers/Examples',
+    Faq: 'helpers/Faq',
     Grid: 'helpers/Grid',
     Page: 'helpers/Page',
     Parameters: 'helpers/Parameters',
