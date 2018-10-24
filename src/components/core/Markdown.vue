@@ -63,10 +63,19 @@
       }
 
       return h(props.tag, {
-        staticClass: wantsList && 'mb-3', // Find a better way?
+        staticClass: 'markdown',
+        class: {
+          'mb-3': wantsList
+        },
         domProps: { innerHTML: marked(code) },
         ...data
       })
     }
   }
 </script>
+
+<style>
+h4.markdown > p {
+  margin-bottom: 0;
+}
+</style>

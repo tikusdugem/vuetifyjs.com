@@ -37,7 +37,8 @@
     GuideToolbar: 'layout/Toolbar',
     Group: 'layout/partials/Group',
     Item: 'layout/partials/Item',
-    SubGroup: 'layout/partials/SubGroup'
+    SubGroup: 'layout/partials/SubGroup',
+    Supporters: 'helpers/Supporters'
   }
 
   Object.keys(components).forEach(key => {
