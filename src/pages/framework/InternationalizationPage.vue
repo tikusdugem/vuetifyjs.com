@@ -126,7 +126,7 @@
 </template>
 
 <script>
-  import locales from 'vuetify/es5/locale/index'
+  import * as locales from 'vuetify/es5/locale'
   import ISO6391 from 'iso-639-1'
 
   export default {
