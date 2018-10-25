@@ -3,10 +3,10 @@
     <v-layout row wrap>
       <v-flex xs12 lg6>
         <v-menu
+          v-model="menu1"
+          :close-on-content-click="false"
           full-width
           max-width="290"
-          :close-on-content-click="false"
-          v-model="menu1"
         >
           <v-text-field
             slot="activator"
@@ -23,10 +23,10 @@
 
       <v-flex xs12 lg6>
         <v-menu
+          v-model="menu2"
+          :close-on-content-click="false"
           full-width
           max-width="290"
-          :close-on-content-click="false"
-          v-model="menu2"
         >
           <v-text-field
             slot="activator"
