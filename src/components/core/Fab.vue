@@ -1,22 +1,26 @@
 <template>
-  <v-fab-transition>
-    <v-btn
-      v-scroll="onScroll"
-      v-show="fab"
-      :style="{
-        bottom: $vuetify.breakpoint.smOnly ? '64px' : ''
-      }"
-      fab
-      dark
-      fixed
-      bottom
-      right
-      color="red"
-      @click="toTop"
-    >
-      <v-icon>keyboard_arrow_up</v-icon>
-    </v-btn>
-  </v-fab-transition>
+  <v-tooltip left>
+    <v-fab-transition slot="activator" slot-scope="props">
+      <v-btn
+        v-scroll="onScroll"
+        v-show="fab"
+        :style="{
+          bottom: $vuetify.breakpoint.smOnly ? '64px' : ''
+        }"
+        fab
+        dark
+        fixed
+        bottom
+        right
+        color="red"
+        v-on="props.on"
+        @click="toTop"
+      >
+        <v-icon>keyboard_arrow_up</v-icon>
+      </v-btn>
+    </v-fab-transition>
+    <span>Return to top</span>
+  </v-tooltip>
 </template>
 
 <script>
