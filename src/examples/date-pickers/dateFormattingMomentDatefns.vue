@@ -11,6 +11,7 @@
           <v-text-field
             slot="activator"
             :value="computedDateFormattedMomentjs"
+            clearable
             label="Formatted with Moment.js"
             readonly
           ></v-text-field>
@@ -31,6 +32,7 @@
           <v-text-field
             slot="activator"
             :value="computedDateFormattedDatefns"
+            clearable
             label="Formatted with datefns"
             readonly
           ></v-text-field>
@@ -50,7 +52,7 @@
 
   export default {
     data: () => ({
-      date: null,
+      date: new Date().toISOString().substr(0, 10),
       menu1: false,
       menu2: false
     }),
