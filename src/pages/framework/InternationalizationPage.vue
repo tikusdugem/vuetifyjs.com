@@ -59,7 +59,7 @@
       helpers-markup(lang="vue")
         | &lt;template&gt;
         |   &lt;div class="my-component"&gt;
-        |     {{ '{{ $vuetify.t(\'my-component.text\') \}\}' }}
+        |     {{ '{{ $vuetify.t(\'$vuetify.my-component.text\') \}\}' }}
         |   &lt;/div&gt;
         | &lt;/template&gt;
 
